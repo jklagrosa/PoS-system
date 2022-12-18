@@ -1,3 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* CONTAINER */
+  .containerWrapper {
+    @apply py-5 px-10;
+  }
+  /* END */
+
+  /* MAIN HEADER TAGS */
+    .mainHeaderTags {
+      @apply text-3xl font-bold;
+    }
+  /* END */
+
+  /* MARQUEE */
+  .marqueeH1 {
+    @apply text-4xl font-black text-[var(--darkblue2)] mb-1;
+  }
+  .marqueeH2 {
+    @apply text-sm text-[var(--gray2)] text-right mb-1;
+  }
+  .preparingFood {
+    @apply bg-[var(--darkblue2)] text-[var(--white)] text-xs py-1 px-2 text-center rounded-[4px] mb-1;
+  }
+  .marqueeH3 {
+    @apply text-xs text-[var(--gray)] capitalize font-medium mb-1;
+  }
+  /* END */
+
+  /* NAVIGATION */
+  .navLogoHeader {
+    @apply text-white font-bold text-2xl;
+  }
+  .navActive {
+    @apply bg-[var(--white)] text-[var(--darkblue2)];
+  }
+  .navInactive {
+    @apply hover:text-[var(--alabaster)]
+  }
+  .navLinks {
+    @apply mx-4 transition ease-out delay-100 py-2 px-4 rounded-md text-base;
+  }
+  /* END */
+}
+
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -5,9 +55,23 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+
+  /* COLORS */
+  --white: #fff;
+  --alabaster: #EDEADE;
+  --black: #000;
+  --blue: #0c7af7;
+  --sky: #5ba5ee;
+  --darkblue: #043e80;
+  --darkblue2: #000080;
+  --brown: #8c7c74;
+  --gray: #bdc3ce;
+  --gray2: #ABADA8;
+  --darkbrown: #4c3c3c;
+  /* END */
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -87,12 +151,13 @@ body {
 
 body {
   color: rbg(--foreground-rgb);
-  background: linear-gradient(
+  background: whitesmoke;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {

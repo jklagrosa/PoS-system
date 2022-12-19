@@ -14,9 +14,9 @@ export default function Nav() {
 
   return (
     //   --blue
-    <nav className="flex items-center bg-[var(--darkblue2)] px-6 py-4 border-b border-gray-200">
+    <nav className="flex items-center bg-[var(--darkblue2)] px-6 py-5 border-b border-gray-200">
       <h1 className="navLogoHeader">Café ligaya</h1>
-      <div className="mx-auto text-lg text-[var(--white)] cursor-pointer">
+      <div className="text-lg text-[var(--white)] cursor-pointer">
         {navLinks.map((link, index) => (
           <React.Fragment key={index}>
             <a
@@ -36,7 +36,7 @@ export default function Nav() {
         <a className="navLinks">Dessert</a> */}
       </div>
 
-      <div>
+      <div className="ml-auto">
         <button>Logout</button>
       </div>
     </nav>

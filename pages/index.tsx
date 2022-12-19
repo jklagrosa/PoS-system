@@ -3,6 +3,7 @@
 // import { Inter } from "@next/font/google";
 // import styles from "../styles/Home.module.css";
 // const inter = Inter({ subsets: ["latin"] });
+import Categories from "../components/Items";
 import Nav from "../components/Nav";
 import OrderList from "../components/OrderList";
 
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Nav />
       <OrderList />
+      <Categories />
     </>
   );
 }

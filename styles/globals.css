@@ -5,7 +5,8 @@
 @layer components {
   /* CONTAINER */
   .containerWrapper {
-    @apply py-5 px-10;
+    /* bg-red-700 */
+    @apply px-5 pb-5 w-[1000px] max-h-[400px] overflow-y-scroll;
   }
   /* END */
 
@@ -15,7 +16,25 @@
     }
   /* END */
 
+  /* PRODUCT ITEMS */
+    .productItems {
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .overlay {
+        background: linear-gradient(
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.6) );
+    }
+  /* END */
+
   /* MARQUEE */
+  .orderItem {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+  .marqueeItems {
+    @apply bg-[var(--white)] w-[250px] min-h-[100px] py-2 px-4 border-l-4 rounded-tr-2xl rounded-br-2xl border-[var(--darkblue2)] flex items-center justify-between mr-10 cursor-pointer;
+  }
   .marqueeH1 {
     @apply text-4xl font-black text-[var(--darkblue2)] mb-1;
   }
@@ -32,7 +51,7 @@
 
   /* NAVIGATION */
   .navLogoHeader {
-    @apply text-white font-bold text-2xl;
+    @apply text-white font-bold text-2xl mr-5;
   }
   .navActive {
     @apply bg-[var(--white)] text-[var(--darkblue2)];
